@@ -13,8 +13,8 @@ namespace ProductLabel.entities
 
         }
 
-        public ImportedProduct(String name,double price, double customsFee)
-            :base(name,price)
+        public ImportedProduct(String name, double price, double customsFee)
+            : base(name, price)
         {
             CustomsFee = customsFee;
         }
@@ -23,9 +23,10 @@ namespace ProductLabel.entities
         {
             return CustomsFee + Price;
         }
-        public override String Pricetag()
+
+        public override string PriceTag()
         {
-            return
+            return Name + " $ " + TotalPrice() + " (Customs fee: $" + CustomsFee + ")";
         }
     }
 }

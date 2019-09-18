@@ -17,9 +17,9 @@ namespace ProductLabel.entities
             ManufactureDate = manufactureDate;
         }
 
-        public override string priceTag()
+        public override string PriceTag()
         {
-            return Name + "(used) $ " + Price + "(Manufacture date: " + ManufactureDate + ")";
+            return Name + " (used) $ " + Price + " (Manufacture date: " + ManufactureDate + ")";
         }
     }
 }

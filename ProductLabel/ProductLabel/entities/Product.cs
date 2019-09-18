@@ -16,7 +16,7 @@
             Price = price;
         }
 
-        public virtual string priceTag()
+        public virtual string PriceTag()
         {
             return Name + " $ " + Price;
         }
